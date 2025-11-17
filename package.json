@@ -1,0 +1,27 @@
+{
+  "name": "threejs-vite-typescript-express-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:dev:*\"",
+    "dev:client": "vite",
+    "dev:server": "nodemon --watch server --exec \"node server/index.js\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4",
+    "three": "^0.156.0",
+    "cannon-es": "^0.20.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "typescript": "^5.2.2",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.1"
+  }
+}
